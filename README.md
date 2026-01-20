@@ -220,6 +220,4 @@ NumPy / SciPy
 
 MNE-Python
 
-fsaverage anatomical model
-## 🧠 Pipeline Overview
 

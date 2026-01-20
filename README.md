@@ -153,7 +153,7 @@ The pipeline returns a dictionary:
   "epochs"        : mne.Epochs (if events provided)
 }
 
-
+<br>
 📊 Visualization Helpers
 
 Included plotting utilities:
@@ -172,7 +172,8 @@ plot_sample_comparison(
 )
 ```
 
-
+<br>
+<br>
 🧪 Event & Epoch Utilities
 Create Events from Task Table
 
@@ -185,7 +186,8 @@ Direct Epoch Creation
 epochs, events, event_id = epochs_from_task_df(df, raw)
 
 
-
+<br>
+<br>
 ⚠️ Notes & Best Practices
 
 Units matter: Inputs are assumed in millimeters, MNE uses meters
@@ -197,7 +199,8 @@ Bad channels marked in MNE are automatically excluded from spatial filtering
 Spatial PC filtering is applied separately to HbO and HbR
 
 
-
+<br>
+<br>
 📚 References
 
 Zhang et al. (Hirsch Lab, Yale), NeuroImage — spatial global physiology removal
@@ -207,7 +210,8 @@ Klein et al., Human Brain Mapping
 MNE-Python fNIRS module documentation
 
 
-
+<br>
+<br>
 🧑‍🔬 Intended Use
 
 This codebase is designed for:
@@ -220,7 +224,8 @@ Research pipelines requiring spatially principled denoising
 
 It is not a black-box clinical preprocessing tool.
 
-
+<br>
+<br>
 ✨ Acknowledgments
 
 Built on top of:

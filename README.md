@@ -171,6 +171,8 @@ plot_sample_comparison(
     channel_index=1
 )
 ```
+
+
 🧪 Event & Epoch Utilities
 Create Events from Task Table
 
@@ -182,6 +184,8 @@ annotate_task_blocks(df, raw)
 Direct Epoch Creation
 epochs, events, event_id = epochs_from_task_df(df, raw)
 
+
+
 ⚠️ Notes & Best Practices
 
 Units matter: Inputs are assumed in millimeters, MNE uses meters
@@ -192,6 +196,8 @@ Bad channels marked in MNE are automatically excluded from spatial filtering
 
 Spatial PC filtering is applied separately to HbO and HbR
 
+
+
 📚 References
 
 Zhang et al. (Hirsch Lab, Yale), NeuroImage — spatial global physiology removal
@@ -199,6 +205,8 @@ Zhang et al. (Hirsch Lab, Yale), NeuroImage — spatial global physiology remova
 Klein et al., Human Brain Mapping
 
 MNE-Python fNIRS module documentation
+
+
 
 🧑‍🔬 Intended Use
 
@@ -211,6 +219,7 @@ High-density fNIRS studies
 Research pipelines requiring spatially principled denoising
 
 It is not a black-box clinical preprocessing tool.
+
 
 ✨ Acknowledgments
 

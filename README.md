@@ -85,14 +85,15 @@ MNE Raw → Epochs
 ```bash
 pip install numpy scipy pandas matplotlib mne
 pip install pywavelets
-
-## 🚀 Quick Start
-## 1. Import the Pipeline
+```
+🚀 Quick Start
+1. Import the Pipeline
+```bash
 from spatial_Integration import run_pipeline
-
-## 2. Required Inputs
-## Fiducials (mm)
-
+```
+2. Required Inputs
+Fiducials (mm)
+```bash
 fid_subj_mm = {
     "N": np.array([x, y, z]),
     "L": np.array([x, y, z]),
@@ -101,21 +102,26 @@ fid_subj_mm = {
     "I": np.array([x, y, z]),
     "CZ": np.array([x, y, z])
 }
-
-## Channel Coordinates (mm)
+```
+Channel Coordinates (mm)
+```bash
 channel_coords = np.ndarray((n_channels, 3))
-
+```
 Optode Table
 optode_df columns:
 ["Name", "X", "Y", "Z"]   # Name = S# or D#
 
 fNIRS Data
+
+```bash
 H_hbo = np.ndarray((n_times, n_channels))
 H_hbr = np.ndarray((n_times, n_channels))
 sfreq = 10.0  # Hz
-
+```
 
 3. Run the Pipeline
+
+```bash
 result = run_pipeline(
     channel_coords=channel_coords,
     fid_subj_mm=fid_subj_mm,
@@ -130,9 +136,12 @@ result = run_pipeline(
     do_wavelet_detrend=False
 )
 
-# 📤 Outputs
+```
+
+📤 Outputs
 
 The pipeline returns a dictionary:
+
 {
   "raw"           : mne.io.Raw,
   "xf"            : alignment diagnostics,
@@ -154,13 +163,14 @@ plot_sample_comparison
 plot_correlation_matrices_and_kernel
 
 Example:
+```bash
 plot_sample_comparison(
     raw=H_hbo,
     H_clean=result["H_hbo_neur"],
     H_global=result["H_hbo_global"],
     channel_index=1
 )
-
+```
 🧪 Event & Epoch Utilities
 Create Events from Task Table
 

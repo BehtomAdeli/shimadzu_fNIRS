@@ -86,12 +86,12 @@ MNE Raw → Epochs
 pip install numpy scipy pandas matplotlib mne
 pip install pywavelets
 
-🚀 Quick Start
-1. Import the Pipeline
+## 🚀 Quick Start
+## 1. Import the Pipeline
 from spatial_Integration import run_pipeline
 
-2. Required Inputs
-Fiducials (mm)
+## 2. Required Inputs
+## Fiducials (mm)
 
 fid_subj_mm = {
     "N": np.array([x, y, z]),
@@ -102,7 +102,7 @@ fid_subj_mm = {
     "CZ": np.array([x, y, z])
 }
 
-Channel Coordinates (mm)
+## Channel Coordinates (mm)
 channel_coords = np.ndarray((n_channels, 3))
 
 Optode Table
@@ -130,7 +130,7 @@ result = run_pipeline(
     do_wavelet_detrend=False
 )
 
-📤 Outputs
+# 📤 Outputs
 
 The pipeline returns a dictionary:
 {
@@ -184,7 +184,7 @@ Spatial PC filtering is applied separately to HbO and HbR
 
 📚 References
 
-Zhang et al., NeuroImage — spatial global physiology removal
+Zhang et al. (Hirsch Lab, Yale), NeuroImage — spatial global physiology removal
 
 Klein et al., Human Brain Mapping
 
